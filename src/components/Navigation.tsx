@@ -1,7 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
-export default function Navigation() {
+export interface NavLink {
+  label: string;
+  href: string;
+}
+
+export default function Navigation({ brand, links }: { brand: string; links: NavLink[] }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -12,15 +17,6 @@ export default function Navigation() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const navLinks = [
-    { label: 'About', href: '#about' },
-    { label: 'Experience', href: '#experience' },
-    { label: 'Projects', href: '#projects' },
-    { label: 'Skills', href: '#skills' },
-    { label: 'Blog', href: '#blog' },
-    { label: 'Contact', href: '#contact' },
-  ];
 
   return (
     <nav
@@ -33,11 +29,11 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <a href="#" className="text-xl font-bold text-[#00FFC6] hover:text-[#00FFC6]/80 transition-colors">
-            MH
+            {brand}
           </a>
 
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
+            {links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -51,6 +47,7 @@ export default function Navigation() {
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden text-[#C9D1D9] hover:text-[#00FFC6] transition-colors"
+            aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -58,7 +55,7 @@ export default function Navigation() {
 
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-3">
-            {navLinks.map((link) => (
+            {links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
