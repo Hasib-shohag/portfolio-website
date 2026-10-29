@@ -1,0 +1,400 @@
+{
+  "settings": {
+    "full_name": "Md Hasibul Hossain",
+    "brand_initials": "MH",
+    "email": "hasibcuetmie.pm@gmail.com",
+    "linkedin_url": "https://www.linkedin.com/in/hasibcuetmie/",
+    "github_url": "https://github.com/Hasib-shohag",
+    "location": "Dhaka, Bangladesh",
+    "cv_url": "https://github.com/Hasib-shohag/Resume/raw/8b72e2f0fe38caff46085d7c3a60420e602706c5/CV_Md_Hasibul_Hossain_PM.pdf",
+    "footer_tagline": "A product person who understands coding but love to build product which creates impact",
+    "copyright_text": "© 2026 All rights reserved."
+  },
+  "sections": [
+    {
+      "section_key": "home",
+      "kind": "hero",
+      "title": "",
+      "title_highlight": "",
+      "subtitle": "",
+      "menu_label": null,
+      "position": 10,
+      "is_visible": true,
+      "content": {
+        "badge": "Product Manager | Project Manager",
+        "name": "Md Hasibul Hossain",
+        "typing_phrases": [
+          "Defining product strategy for fintech platforms",
+          "Leading cross-functional product execution",
+          "Scaling data-driven SaaS products"
+        ],
+        "intro": "Building scalable fintech and SaaS products by aligning business strategy, user needs, and engineering systems.",
+        "primary_button_label": "View Projects",
+        "primary_button_link": "#projects",
+        "resume_button_label": "Download Resume",
+        "contact_button_label": "Contact",
+        "scroll_label": "Scroll to explore",
+        "background_image": ""
+      }
+    },
+    {
+      "section_key": "about",
+      "kind": "about",
+      "title": "About",
+      "title_highlight": "Me",
+      "subtitle": "",
+      "menu_label": "About",
+      "position": 20,
+      "is_visible": true,
+      "content": {
+        "paragraphs": [
+          "I'm **Md Hasibul Hossain**, a Product and Project Manager experienced in delivering scalable digital platforms. I lead cross-functional teams to turn complex business problems into structured, user-focused products, combining roadmap planning, agile execution, and KPI-driven decision making.",
+          "My work spans SaaS and platform systems, with technical expertise in AI-driven products, large language models, agentic AI workflows, tokenization, embeddings, and API-driven architectures.",
+          "I thrive at the intersection of strategy, execution, and emerging technologies, building impactful products that scale reliably."
+        ],
+        "photo": "",
+        "focus_title": "Core Focus Areas",
+        "focus_items": [
+          "Product Roadmap Ownership",
+          "PRD and SRS Writing",
+          "KPI Monitoring & Analytics",
+          "AI-Driven Product Features",
+          "Cross-functional Product Execution",
+          "System Workflow Planning",
+          "API Integration Feasibility"
+        ],
+        "strengths": [
+          { "icon": "Target", "title": "Product Roadmap Ownership", "description": "Strategic planning and execution", "hidden": false },
+          { "icon": "Code2", "title": "PRD & SRS Writing", "description": "Technical documentation excellence", "hidden": false },
+          { "icon": "BarChart3", "title": "KPI Monitoring", "description": "Data-driven decision making", "hidden": false },
+          { "icon": "Users", "title": "AI-Driven Product Features", "description": "LLMs, Agentic AI, Embeddings, Tokenization", "hidden": false },
+          { "icon": "Workflow", "title": "Cross-functional Execution", "description": "Team collaboration and delivery", "hidden": false },
+          { "icon": "Lightbulb", "title": "System Workflow Planning", "description": "Architecture and integration", "hidden": false }
+        ]
+      }
+    },
+    {
+      "section_key": "experience",
+      "kind": "experience",
+      "title": "Work",
+      "title_highlight": "Experience",
+      "subtitle": "",
+      "menu_label": "Experience",
+      "position": 30,
+      "is_visible": true,
+      "content": {
+        "entries": [
+          {
+            "company": "Brain Station 23 PLC",
+            "location": "Dhaka, Bangladesh",
+            "role": "Project Manager",
+            "period": "2024 – Present",
+            "points": [
+              "Led end-to-end delivery of digital banking, AI ATS Platform, AI Ride Planner and Micro credit platforms",
+              "Converted strategic goals into PRDs, SRS documents, and user stories",
+              "Managed product roadmap execution with engineering, design, QA, and operations teams",
+              "Managed stakeholders at all levels, including CXOs internally and external partners across multiple verticals",
+              "Supported system architecture workflows and API integrations",
+              "Conducted post-release evaluations to improve system scalability"
+            ],
+            "logo": "",
+            "hidden": false
+          },
+          {
+            "company": "TS4U LLC",
+            "location": "Michigan, USA",
+            "role": "Product Manager",
+            "period": "2023 – 2024",
+            "points": [
+              "Owned full product lifecycle for SaaS platforms",
+              "Defined product vision and roadmap",
+              "Conducted user research and market validation",
+              "Collaborated with engineering and design teams to improve usability",
+              "Led agile ceremonies and sprint planning",
+              "Delivered features improving user engagement and retention"
+            ],
+            "logo": "",
+            "hidden": false
+          },
+          {
+            "company": "Dekko Legacy Group",
+            "location": "Dhaka, Bangladesh",
+            "role": "Executive – Sales & Marketing",
+            "period": "2022",
+            "points": [
+              "Supported pipeline and sales operations",
+              "Generated market insights to improve revenue opportunities",
+              "Coordinated with production and planning teams to improve workflow efficiency"
+            ],
+            "logo": "",
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "section_key": "projects",
+      "kind": "projects",
+      "title": "Key",
+      "title_highlight": "Projects",
+      "subtitle": "",
+      "menu_label": "Projects",
+      "position": 40,
+      "is_visible": true,
+      "content": {
+        "projects": [
+          {
+            "title": "Digital Banking Platform",
+            "year": "2024-2025",
+            "role": "Project Manager",
+            "users": "220K+",
+            "problem": "Bank needed a reliable internet banking for retail and corporate and loan platform with scalable microservice transition from monolith architecture.",
+            "solution": "Delivered two digital banking platforms with integrated loan modules and scalable backend architecture.",
+            "contributions": [
+              "Project planning execution",
+              "SRS Writing and API integration feasibility",
+              "Internal and External team management and CPI verification",
+              "Pre and Post-release Checklist and release coordination"
+            ],
+            "impact": "Reduced system rework by 20% through better requirement analysis and sprint planning.",
+            "tags": ["Fintech", "Digital Banking", "Retail", "Corporate"],
+            "image": "",
+            "link_url": "",
+            "link_label": "",
+            "hidden": false
+          },
+          {
+            "title": "AI Ride-Share Microfinance Platform",
+            "year": "2025",
+            "role": "Product Manager",
+            "users": "",
+            "problem": "Ride-share drivers struggle to find rides and access financing due to lack of credit scoring.",
+            "solution": "Platform enabling AI-based location wise ride planning with credit scoring and loan accessibility for ride-share drivers.",
+            "contributions": [
+              "Managed product roadmap",
+              "Technical workflow design",
+              "AI credit scoring integration",
+              "Financial analytics implementation"
+            ],
+            "impact": "AI Based personalized trips planning and Improved financing accessibility for underserved ride-share driver segment.",
+            "tags": ["AI", "Ride Share", "Fintech", "Credit Scoring"],
+            "image": "",
+            "link_url": "",
+            "link_label": "",
+            "hidden": false
+          },
+          {
+            "title": "Credit-Based E-Commerce & Microfinance Platform",
+            "year": "2024-2025",
+            "role": "Product Manager",
+            "users": "100k+",
+            "problem": "Unengaged in banking domain RMG workers needed flexible credit options.",
+            "solution": "Designed a credit-enabled marketplace combining loans, savings, investments, and product EMIs.",
+            "contributions": [
+              "Product strategy and User journey establishment",
+              "Technical workflow design",
+              "Credit integration roadmap",
+              "Multi-product feature planning"
+            ],
+            "impact": "Enabled seamless credit access within e-commerce ecosystem.",
+            "tags": ["E-commerce", "Credit", "Microfinance", "e-KYC", "Loan"],
+            "image": "",
+            "link_url": "",
+            "link_label": "",
+            "hidden": false
+          },
+          {
+            "title": "Project Management SaaS Platform",
+            "year": "2024",
+            "role": "Product Manager",
+            "users": "50k",
+            "problem": "Development teams needed better workflow tracking, testing, communication through chats and automation.",
+            "solution": "Internal platform supporting automated testing, configurable roles, and user story execution with ticketing based chat feature.",
+            "contributions": [
+              "Automated testing workflows",
+              "Role-based access control",
+              "User story execution system",
+              "Workflow tracking features"
+            ],
+            "impact": "Improved development team productivity and sprint delivery rates.",
+            "tags": ["SaaS", "Project Management", "Automation", "Chatbot"],
+            "image": "",
+            "link_url": "",
+            "link_label": "",
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "section_key": "skills",
+      "kind": "skills",
+      "title": "Skills &",
+      "title_highlight": "Expertise",
+      "subtitle": "",
+      "menu_label": "Skills",
+      "position": 50,
+      "is_visible": true,
+      "content": {
+        "categories": [
+          {
+            "icon": "Layers",
+            "title": "Product Management",
+            "skills": ["Product Roadmapping", "PRD Writing", "KPI Monitoring", "User Funnel Analysis", "Product Market Fit"],
+            "hidden": false
+          },
+          {
+            "icon": "Code",
+            "title": "Technical Understanding",
+            "skills": [
+              "System Architecture Thinking",
+              "API Design & Integration",
+              "SaaS Platform Design",
+              "Digital Banking & Credit System",
+              "AI-Driven Systems",
+              "Tokenization & Embeddings",
+              "Cross-Functional Technical Collaboration"
+            ],
+            "hidden": false
+          },
+          {
+            "icon": "Wrench",
+            "title": "Tools & Platforms",
+            "skills": [
+              "Jira", "Power BI", "Excel", "Figma", "GitHub", "Notion", "Miro",
+              "GA4", "Python", "Grafana", "SQL", "Claude Code", "Gamma", "Lucidchart"
+            ],
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "section_key": "product-thinking",
+      "kind": "product_thinking",
+      "title": "How I Build",
+      "title_highlight": "Products",
+      "subtitle": "",
+      "menu_label": null,
+      "position": 60,
+      "is_visible": true,
+      "content": {
+        "steps_title": "Product Framework",
+        "steps": [
+          { "title": "User Problem", "description": "Identify pain points through research", "hidden": false },
+          { "title": "Product Hypothesis", "description": "Define solution assumptions", "hidden": false },
+          { "title": "MVP Build", "description": "Ship minimum viable solution", "hidden": false },
+          { "title": "Experiment & Metrics", "description": "Measure and analyze performance", "hidden": false },
+          { "title": "Iteration", "description": "Optimize based on data", "hidden": false }
+        ],
+        "metrics_title": "Key Metrics I Track",
+        "metrics": [
+          { "title": "Activation Rate", "description": "User onboarding success", "hidden": false },
+          { "title": "User Retention", "description": "Long-term engagement", "hidden": false },
+          { "title": "Conversion Rate", "description": "Funnel optimization", "hidden": false },
+          { "title": "Revenue per User", "description": "Monetization efficiency", "hidden": false }
+        ],
+        "quote": "I combine quantitative metrics with qualitative insights to make informed product decisions that balance user value with business impact."
+      }
+    },
+    {
+      "section_key": "system-architecture",
+      "kind": "system_architecture",
+      "title": "System",
+      "title_highlight": "Architecture",
+      "subtitle": "",
+      "menu_label": null,
+      "position": 70,
+      "is_visible": true,
+      "content": {
+        "diagram_title": "Digital Banking Transaction Flow",
+        "layers": [
+          { "title": "User App", "description": "Web & Mobile Interface", "hidden": false },
+          { "title": "API Gateway", "description": "Request routing & auth", "hidden": false },
+          { "title": "Authentication Service", "description": "Identity & access control", "hidden": false },
+          { "title": "Transaction Processor", "description": "Business logic layer", "hidden": false },
+          { "title": "Banking Network", "description": "External integrations", "hidden": false },
+          { "title": "Settlement Layer", "description": "Final transaction settlement", "hidden": false }
+        ],
+        "stats": [
+          { "value": "220K+", "label": "Active Users", "hidden": false },
+          { "value": "20%", "label": "Reduced Rework", "hidden": false },
+          { "value": "99.9%", "label": "System Uptime", "hidden": false }
+        ]
+      }
+    },
+    {
+      "section_key": "blog",
+      "kind": "blog",
+      "title": "Product",
+      "title_highlight": "Notes",
+      "subtitle": "Insights on product thinking, fintech systems, and building scalable platforms.",
+      "menu_label": "Blog",
+      "position": 80,
+      "is_visible": true,
+      "content": {
+        "max_posts": 4,
+        "empty_message": "New articles are on the way."
+      }
+    },
+    {
+      "section_key": "contact",
+      "kind": "contact",
+      "title": "Get In",
+      "title_highlight": "Touch",
+      "subtitle": "",
+      "menu_label": "Contact",
+      "position": 90,
+      "is_visible": true,
+      "content": {
+        "connect_title": "Let's Connect",
+        "connect_text": "I'm always interested in discussing product opportunities, fintech innovation, and building scalable platforms. Feel free to reach out.",
+        "show_form": true,
+        "button_label": "Send Message",
+        "success_message": "Message sent successfully! I'll get back to you soon."
+      }
+    }
+  ],
+  "sample_posts": [
+    {
+      "id": "sample-1",
+      "title": "Why Banking Systems Still Use SOAP APIs",
+      "slug": "banking-soap-apis",
+      "excerpt": "Understanding legacy integration patterns in modern fintech and the gradual migration to REST.",
+      "published_at": "2026-02-15",
+      "tags": ["Fintech", "API Design"],
+      "cover_image_url": null,
+      "external_url": null
+    },
+    {
+      "id": "sample-2",
+      "title": "Product Metrics Every Fintech PM Should Track",
+      "slug": "fintech-pm-metrics",
+      "excerpt": "Essential KPIs for measuring success in digital banking and financial platforms.",
+      "published_at": "2026-01-28",
+      "tags": ["Product Management", "Metrics"],
+      "cover_image_url": null,
+      "external_url": null
+    },
+    {
+      "id": "sample-3",
+      "title": "Building Scalable Credit Platforms",
+      "slug": "scalable-credit-platforms",
+      "excerpt": "Architectural considerations for designing credit systems that can handle millions of users.",
+      "published_at": "2025-12-10",
+      "tags": ["Architecture", "Credit"],
+      "cover_image_url": null,
+      "external_url": null
+    },
+    {
+      "id": "sample-4",
+      "title": "How Product Managers Work with Engineers",
+      "slug": "pm-engineer-collaboration",
+      "excerpt": "Best practices for effective cross-functional collaboration in technical product development.",
+      "published_at": "2025-11-22",
+      "tags": ["Product Management", "Collaboration"],
+      "cover_image_url": null,
+      "external_url": null
+    }
+  ]
+}
