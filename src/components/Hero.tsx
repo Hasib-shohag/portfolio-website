@@ -95,7 +95,18 @@ export default function Hero({ section, settings }: { section: Section; settings
           {text(c.intro)}
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+        <div className="{list<{ value: string; label: string }>(c.highlights).length > 0 && (
+<div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 mb-12">
+{list<{ value: string; label: string }>(c.highlights).map((h) => (
+<div key={h.label} className="text-center">
+<div className="text-2xl md:text-3xl font-bold text-[#00FFC6]">{h.value}</div>
+<div className="text-xs md:text-sm text-[#8B949E] font-mono">{h.label}</div>
+</div>
+))}
+</div>
+)}
+
+<div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">">
           {primaryLabel && (
             <a
               href={safeHref(text(c.primary_button_link, '#projects'), '#projects')}
