@@ -3,9 +3,15 @@ import { Download, Mail, ArrowDown } from 'lucide-react';
 import { list, text, type Section, type SiteSettings } from '../content/types';
 import { safeHref } from './shared';
 
+interface Highlight {
+  value: string;
+  label: string;
+}
+
 export default function Hero({ section, settings }: { section: Section; settings: SiteSettings }) {
   const c = section.content;
   const phrases = useMemo(() => list<string>(c.typing_phrases).filter(Boolean), [c.typing_phrases]);
+  const highlights = list<Highlight>(c.highlights).filter((h) => h && h.value && h.label);
   const [typedText, setTypedText] = useState('');
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -53,12 +59,7 @@ export default function Hero({ section, settings }: { section: Section; settings
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path
-                  d="M 40 0 L 0 0 0 40"
-                  fill="none"
-                  stroke="rgba(0, 255, 198, 0.1)"
-                  strokeWidth="1"
-                />
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 255, 198, 0.1)" strokeWidth="1" />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#grid)" />
@@ -95,18 +96,18 @@ export default function Hero({ section, settings }: { section: Section; settings
           {text(c.intro)}
         </p>
 
-        <div className="{list<{ value: string; label: string }>(c.highlights).length > 0 && (
-<div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 mb-12">
-{list<{ value: string; label: string }>(c.highlights).map((h) => (
-<div key={h.label} className="text-center">
-<div className="text-2xl md:text-3xl font-bold text-[#00FFC6]">{h.value}</div>
-<div className="text-xs md:text-sm text-[#8B949E] font-mono">{h.label}</div>
-</div>
-))}
-</div>
-)}
+        {highlights.length > 0 && (
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 mb-12">
+            {highlights.map((h) => (
+              <div key={h.label} className="text-center">
+                <div className="text-2xl md:text-3xl font-bold text-[#00FFC6]">{h.value}</div>
+                <div className="text-xs md:text-sm text-[#8B949E] font-mono">{h.label}</div>
+              </div>
+            ))}
+          </div>
+        )}
 
-<div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
           {primaryLabel && (
             <a
               href={safeHref(text(c.primary_button_link, '#projects'), '#projects')}
