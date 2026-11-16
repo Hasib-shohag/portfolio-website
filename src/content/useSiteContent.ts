@@ -51,7 +51,7 @@ export function useSiteContent(): SiteContent {
         .from('blog_posts')
         .select('id, title, slug, excerpt, published_at, tags, cover_image_url, external_url')
         .eq('published', true)
-        .order('published_at', { ascending: false }),
+        .order('published_at', { ascending: false, nullsFirst: false }),
     ])
       .then(([settingsRes, sectionsRes, postsRes]) => {
         if (finished) return;
