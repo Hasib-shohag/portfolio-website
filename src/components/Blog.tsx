@@ -43,14 +43,15 @@ export default function Blog({ section, posts }: { section: Section; posts: Blog
                   </h3>
 
                   <p className="text-[#8B949E] mb-4 leading-relaxed">{post.excerpt}</p>
+                  {post.external_url && <span className="mb-4 block font-mono text-sm text-[#00FFC6]">Read on LinkedIn ↗</span>}
 
                   {post.published_at && (
                     <div className="flex items-center text-[#8B949E] text-sm">
                       <Calendar size={14} className="mr-2" />
                       {new Date(post.published_at).toLocaleDateString('en-US', {
                         year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
+                        month: 'short',
+                        
                       })}
                     </div>
                   )}
