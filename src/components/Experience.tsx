@@ -9,6 +9,7 @@ interface Job {
   period: string;
   points: string[];
   logo?: string;
+  summary?: string;
   hidden?: boolean;
 }
 
@@ -55,7 +56,9 @@ export default function Experience({ section }: { section: Section }) {
                     )}
                   </div>
 
-                  <ul className="space-y-3 mt-6">
+                  {job.summary && <p className="text-[#C9D1D9] leading-relaxed mt-2">{job.summary}</p>}
+
+<ul className="space-y-3 mt-6">
                     {list<string>(job.points)
                       .filter(Boolean)
                       .map((point, idx) => (
