@@ -30,7 +30,7 @@ export default function Navigation({ brand, links }: { brand: string; links: Nav
         <div className="flex items-center justify-between">
           <a href="#" aria-label="Home" className="flex items-center gap-3 text-xl font-bold text-[#00FFC6] hover:text-[#00FFC6]/80 transition-colors">
 <img src="/favicon.svg" alt="" width={32} height={32} className="h-8 w-8 rounded-lg" />
-            {brand}
+            <span className="sr-only">{brand}</span>
           </a>
 
           <div className="hidden md:flex items-center gap-8">
