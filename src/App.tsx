@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -67,6 +68,7 @@ function App() {
       <Navigation brand={settings.brand_initials} links={links} />
       {sections.map((section) => renderSection(section, settings, posts))}
       <Footer settings={settings} />
+      <Analytics />
     </div>
   );
 }
