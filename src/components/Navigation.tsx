@@ -28,7 +28,8 @@ export default function Navigation({ brand, links }: { brand: string; links: Nav
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <a href="#" className="text-xl font-bold text-[#00FFC6] hover:text-[#00FFC6]/80 transition-colors">
+          <a href="#" aria-label="Home" className="flex items-center gap-3 text-xl font-bold text-[#00FFC6] hover:text-[#00FFC6]/80 transition-colors">
+<img src="/favicon.svg" alt="" width={32} height={32} className="h-8 w-8 rounded-lg" />
             {brand}
           </a>
 
